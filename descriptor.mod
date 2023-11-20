@@ -1,7 +1,7 @@
-version="0.0.1"
+version="0.0.2"
 
 tags={
-	"Balance"
+	"Gameplay"
 }
-name="Stellaris Outer Limits Legens"
-supported_version="3.9.*"
+name="Stellaris Outer Limits Legends"
+supported_version="3.10.*"
