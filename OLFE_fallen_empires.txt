@@ -1,0 +1,103 @@
+# Machine
+fallen_mircorv_coalescence = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "emixar_system" # Change to other if just want to use normal system. This was just to show that other initializers are possible
+
+	weight_modifier = {
+		base = 10000
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		create_species = {
+			name = {
+				key="Exara"
+				literal=yes
+			}
+			plural = {
+				key="Exari"
+				literal=yes
+			}
+			adjective={
+				key="Exaran"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = MACHINE1
+			portrait = sd_pla_robot
+			traits = {
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Mircorv Coalescence"
+				literal=yes
+			}
+			adjective = Mircorv
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			flag={
+				icon={
+					category="ornate"
+					file="flag_ornate_7.dds"
+				}
+				background={
+					category="backgrounds"
+					file="flag_BG_2.dds"
+				}
+				colors={
+					"white"
+					"shadow_blue"
+					"black"
+					"null"
+				}
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_machine
+				set_city_graphical_culture = solarpunk_01
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				ruler = {
+					add_skill = 9
+				}
+			}
+		}
+	}
+}
