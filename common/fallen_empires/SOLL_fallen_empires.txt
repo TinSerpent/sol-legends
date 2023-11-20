@@ -1,7 +1,7 @@
 # Machine
 fallen_mircorv_coalescence = {
 	graphical_culture = "fallen_machine_empire_01"
-	initializer = "emixar_system" # Change to other if just want to use normal system. This was just to show that other initializers are possible
+	initializer = "fallen_machine"
 
 	weight_modifier = {
 		base = 10000
