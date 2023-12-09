@@ -1,6 +1,5 @@
-# 2021nov: People's Republic of Gloom - Leoback
-# materialist
-fallen_empire_of_gloom = {
+# Materialist
+fallen_TODO = {
 	graphical_culture = "fallen_empire_02"
 	initializer = "fallen_1"
 
@@ -14,38 +13,21 @@ fallen_empire_of_gloom = {
 
 	create_country_effect = {
 		create_species = {
-			name=
-			{
-				key="Gloom"
-				literal=yes
-			}
-			plural=
-			{
-				key="Glooms"
-				literal=yes
-			}
-			adjective=
-			{
-				key="Gloomy"
-				literal=yes
-			}
-			class = NECROID
-			namelist = NECROID4
-			portrait= nec12
-			traits = random
-			extra_trait_points = 3
-			allow_negative_traits = no
+			TODO
 		}
-		
 		create_country = {
 			name = {
-				key="Empire of Gloom"
+				key=TODO
 				literal=yes
 			}
-			adjective = Imperial
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+		
 			type = fallen_empire
 			ignore_initial_colony_error = yes
-			authority = "auth_democratic"
 			civics = {
 				civic = civic_lethargic_leadership
 				civic = civic_empire_in_decline
@@ -53,25 +35,6 @@ fallen_empire_of_gloom = {
 			species = last_created_species
 			ethos = {
 				ethic = ethic_fanatic_materialist
-			}
-			flag={
-				icon=
-				{
-					category="human"
-					file="flag_human_15.dds"
-				}
-				background=
-				{
-					category="backgrounds"
-					file="00_solid.dds"
-				}
-				colors=
-				{
-					"red"
-					"black"
-					"pink"
-					"null"
-				}
 			}
 			origin = "origin_fallen_empire"
 			effect = {
@@ -92,9 +55,9 @@ fallen_empire_of_gloom = {
 				add_global_ship_design = "NAME_Seeker"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = "Rumney Charnham"
-					class = scientist
-					gender = male
+					name = TODO
+					class = TODO
+					gender = TODO
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
@@ -105,46 +68,99 @@ fallen_empire_of_gloom = {
 		}
 	}
 }
-
-# 2021jul: Rudonian People's Republic - Rudolf Red Herring
-# Xenophile
-fallen_rudonian_peoples_republic = {
-	graphical_culture = "fallen_empire_03"
-	initializer = "fallen_3"
+# Spiritualist
+fallen_empire_2 = {
+	graphical_culture = "fallen_empire_01"
+	initializer = "fallen_2"
 
 	weight_modifier = {
-		base = 99999
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
 	}
 
 	create_country_effect = {
 		create_species = {
-			name=
-			{
-				key="Rudonian"
-				literal=yes
-			}
-			plural=
-			{
-				key="Rudonians"
-				literal=yes
-			}
-			adjective=
-			{
-				key="Rudonic"
-				literal=yes
-			}
-			class = REP
-			namelist = REP1
-			portrait= rep4
-			traits = random
-			extra_trait_points = 3
-			allow_negative_traits = no
+			TODO
 		}
 		create_country = {
-			name = random
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_spiritualist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_2
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Cleanser"
+				add_global_ship_design = "NAME_Eternal"
+				add_global_ship_design = "NAME_Avatar"
+				add_global_ship_design = "NAME_Zealot"
+				add_global_ship_design = "NAME_Penitent"
+				add_global_ship_design = "NAME_Faith"
+				add_global_ship_design = "NAME_Pilgrim"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					gender = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+# Xenophile
+fallen_empire_3 = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			TODO
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
 			type = fallen_empire
 			ignore_initial_colony_error = yes
-			authority = auth_imperial
 			civics = {
 				civic = civic_lethargic_leadership
 				civic = civic_empire_in_decline
@@ -153,7 +169,6 @@ fallen_rudonian_peoples_republic = {
 			ethos = {
 				ethic = ethic_fanatic_xenophile
 			}
-			flag = random
 			origin = "origin_fallen_empire"
 			effect = {
 				set_country_flag = fallen_empire_3
@@ -173,140 +188,88 @@ fallen_rudonian_peoples_republic = {
 				add_global_ship_design = "NAME_Builder"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = "Morston Alford"
-					class = scientist
-					gender = male
+					name = TODO
+					class = TODO
+					gender = TODO
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
 }
-
-# 2022apr: The Hugbox Neigbhorhood - Leoback
-# machine
-fallen_mircorv_coalescence = {
-	graphical_culture = "fallen_machine_empire_01"
-	initializer = "fallen_machine"
+# Xenophobe
+fallen_empire_4 = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
 
 	weight_modifier = {
-		base = 99999
-	}
-
-	possible = {
-		host_has_dlc = "Synthetic Dawn Story Pack"
+		base = 100
 	}
 
 	create_country_effect = {
+		
 		create_species = {
-			species_name=
-			{
-				key="Neighbor"
-				literal=yes
-			}
-			species_plural=
-			{
-				key="Neigbhors"
-				literal=yes
-			}
-			species_adjective=
-			{
-				key="Neighbor"
-				literal=yes
-			}
-			class = MACHINE
-			namelist = MACHINE1
-			portrait = sd_rep_robot
-			traits = {
-				trait = trait_machine_unit
-				trait = random_traits
-			}
-			extra_trait_points = 3
-			allow_negative_traits = no
+			TODO
 		}
 		create_country = {
 			name = {
-				key="The Hugbox Neighborhood"
+				key=TODO
 				literal=yes
 			}
-			adjective = Neighbors
+			adjective = TODO
+			authority = TODO
 			flag={
-				icon=
-				{
-					category="blocky"
-					file="flag_blocky_11.dds"
-				}
-				background=
-				{
-					category="backgrounds"
-					file="diagonal.dds"
-				}
-				colors=
-				{
-					"red"
-					"red_orange"
-					"black"
-					"null"
-				}
+				TODO
 			}
 			type = fallen_empire
 			ignore_initial_colony_error = yes
-			authority = auth_machine_intelligence
 			civics = {
-				civic = civic_machine_remnants
-				civic = civic_custodian_directives
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
 			}
 			species = last_created_species
 			ethos = {
-				ethic = ethic_gestalt_consciousness
+				ethic = ethic_fanatic_xenophobe
 			}
 			origin = "origin_fallen_empire"
 			effect = {
-				set_country_flag = fallen_empire_machine
+				set_country_flag = fallen_empire_4
 				add_resource = {
 					minerals = 10000
 					energy = 10000
 					food = 1000
 					influence = 500
 				}
-				if = {
-					limit = { host_has_dlc = "Apocalypse" }
-					give_technology = {
-						tech = tech_colossus
-						message = no
-					}
-				}
 				# must initialize global designs here
-				add_global_ship_design = "NAME_Omega"
-				add_global_ship_design = "NAME_Alpha"
-				add_global_ship_design = "NAME_Beta"
-				add_global_ship_design = "NAME_Gamma"
-				add_global_ship_design = "NAME_Theta"
-				add_global_ship_design = "NAME_Tau"
-				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = "Friendly Neighbor Karen"
-					class = scientist
+					name = TODO
+					class = TODO
+					gender = TODO
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
 }
 
-# 2023jul: Mircov Coalescence - MetallicHydra
-# 2023aug: Mircov Coalescence - MetallicHydra
-# 2023sep: Mircov Coalescence - MetallicHydra
-# 2023oct: Mircov Coalescence - MetallicHydra
-# machine
-fallen_mircorv_coalescence = {
+# Machine
+fallen_machine_empire = {
 	graphical_culture = "fallen_machine_empire_01"
 	initializer = "fallen_machine"
 
@@ -319,50 +282,18 @@ fallen_mircorv_coalescence = {
 	}
 
 	create_country_effect = {
+		
 		create_species = {
-			name = {
-				key="Exara"
-				literal=yes
-			}
-			plural = {
-				key="Exari"
-				literal=yes
-			}
-			adjective={
-				key="Exaran"
-				literal=yes
-			}
-			class = MACHINE
-			namelist = MACHINE1
-			portrait = sd_pla_robot
-			traits = {
-				trait = trait_machine_unit
-				trait = random_traits
-			}
-			extra_trait_points = 3
-			allow_negative_traits = no
+			TODO
 		}
 		create_country = {
 			name = {
-				key="Mircorv Coalescence"
+				key=TODO
 				literal=yes
 			}
-			adjective = Mircorv
+			adjective = TODO
 			flag={
-				icon={
-					category="ornate"
-					file="flag_ornate_7.dds"
-				}
-				background={
-					category="backgrounds"
-					file="flag_BG_2.dds"
-				}
-				colors={
-					"white"
-					"shadow_blue"
-					"black"
-					"null"
-				}
+				TODO
 			}
 			type = fallen_empire
 			ignore_initial_colony_error = yes
@@ -378,7 +309,6 @@ fallen_mircorv_coalescence = {
 			origin = "origin_fallen_empire"
 			effect = {
 				set_country_flag = fallen_empire_machine
-				set_city_graphical_culture = solarpunk_01
 				add_resource = {
 					minerals = 10000
 					energy = 10000
@@ -402,13 +332,14 @@ fallen_mircorv_coalescence = {
 				add_global_ship_design = "NAME_Sigma"
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
-					name = "MCP"
-					class = scientist
+					name = TODO
+					class = TODO
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
