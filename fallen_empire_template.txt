@@ -13,7 +13,27 @@ fallen_empire_TODO = {
 
 	create_country_effect = {
 		create_species = {
-			TODO
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
@@ -83,7 +103,27 @@ fallen_empire_TODO = {
 
 	create_country_effect = {
 		create_species = {
-			TODO
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
@@ -148,7 +188,27 @@ fallen_empire_TODO = {
 
 	create_country_effect = {
 		create_species = {
-			TODO
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
@@ -215,7 +275,27 @@ fallen_empire_TODO = {
 	create_country_effect = {
 		
 		create_species = {
-			TODO
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
 		}
 		create_country = {
 			name = {
@@ -286,7 +366,30 @@ fallen_machine_empire_TODO = {
 	create_country_effect = {
 		
 		create_species = {
-			TODO
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = TODO
+			portrait = TODO
+			traits = {
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
 		}
 		create_country = {
 			name = {

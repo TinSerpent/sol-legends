@@ -312,8 +312,9 @@ fallen_the_hugbox_neighborhood = {
 					name = "Friendly Neighbor Karen"
 					class = scientist
 					species = owner_main_species
-					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_ruler_machine_intelligence
+					}
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -432,7 +433,7 @@ fallen_empire_leaders_of_the_free_world = {
 	initializer = "fallen_3"
 
 	weight_modifier = {
-		base = 99999
+		base = 100
 	}
 
 	create_country_effect = {
@@ -535,7 +536,7 @@ fallen_empire_radishing_vassal_factory = {
 	initializer = "fallen_4"
 
 	weight_modifier = {
-		base = 99999
+		base = 100
 	}
 
 	create_country_effect = {
@@ -623,6 +624,116 @@ fallen_empire_radishing_vassal_factory = {
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022dec: Empire of the Glirr - Thirlan
+# Xenophobe
+fallen_empire_of_the_glirr = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
+
+	weight_modifier = {
+		base = 99999
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Glir"
+				literal=yes
+			}
+			plural=
+			{
+				key="Glirs"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Glirian"
+				literal=yes
+			}
+			class = AVI
+			namelist = AVI3
+			portrait = avi6
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Empire of the Glirr"
+				literal=yes
+			}
+			adjective = Imperial
+			authority = auth_imperial
+			flag={
+				icon=
+				{
+					category="corporate"
+					file="corporate_07.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_24.dds"
+				}
+				colors=
+				{
+					"orange"
+					"dark_blue"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_4
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = random
+					class = commander
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = trait_ruler_warlike_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_commander_admiral
+						trait = leader_trait_armorer
+					}
+					randomize_traits = no
 					skill = 9
 				}
 				set_leader = last_created_leader
@@ -735,10 +846,13 @@ fallen_mircorv_coalescence = {
 					name = "MCP"
 					class = scientist
 					species = owner_main_species
-					immortal = yes
-					randomize_traits = yes
+					traits = {
+						trait = leader_trait_ruler_machine_intelligence
+					}
+					randomize_traits = no
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
