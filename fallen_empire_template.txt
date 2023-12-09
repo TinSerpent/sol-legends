@@ -1,0 +1,451 @@
+# Materialist
+fallen_empire_TODO = {
+	graphical_culture = "fallen_empire_02"
+	initializer = "fallen_1"
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+		
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_materialist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_1
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Enforcer"
+				add_global_ship_design = "NAME_Savant"
+				add_global_ship_design = "NAME_Scholar"
+				add_global_ship_design = "NAME_Sage"
+				add_global_ship_design = "NAME_Cloaker"
+				add_global_ship_design = "NAME_Librarian"
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					gender = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+# Spiritualist
+fallen_empire_TODO = {
+	graphical_culture = "fallen_empire_01"
+	initializer = "fallen_2"
+
+	weight_modifier = {
+		base = 100
+		modifier = {
+			factor = 99999
+			has_origin = origin_scion
+		}
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_spiritualist
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_2
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Cleanser"
+				add_global_ship_design = "NAME_Eternal"
+				add_global_ship_design = "NAME_Avatar"
+				add_global_ship_design = "NAME_Zealot"
+				add_global_ship_design = "NAME_Penitent"
+				add_global_ship_design = "NAME_Faith"
+				add_global_ship_design = "NAME_Pilgrim"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					gender = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# Xenophile
+fallen_empire_TODO = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophile
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_3
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Adjuster"
+				add_global_ship_design = "NAME_Keeper"
+				add_global_ship_design = "NAME_Custodian"
+				add_global_ship_design = "NAME_Overseer"
+				add_global_ship_design = "NAME_Watcher"
+				add_global_ship_design = "NAME_Seeder"
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					gender = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# Xenophobe
+fallen_empire_TODO = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = TODO
+			namelist = TODO
+			portrait = TODO
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			authority = TODO
+			flag={
+				TODO
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_4
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					gender = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# Machine
+fallen_machine_empire_TODO = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="TODO"
+				literal=yes
+			}
+			plural=
+			{
+				key="TODO"
+				literal=yes
+			}
+			adjective=
+			{
+				key="TODO"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = TODO
+			portrait = TODO
+			traits = {
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key=TODO
+				literal=yes
+			}
+			adjective = TODO
+			flag={
+				TODO
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = TODO
+					class = TODO
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}

@@ -1,10 +1,758 @@
-# Machine
+# 2021nov: People's Republic of Gloom - Leoback
+# materialist
+fallen_empire_of_gloom = {
+	graphical_culture = "fallen_empire_02"
+	initializer = "fallen_1"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Gloom"
+				literal=yes
+			}
+			plural=
+			{
+				key="Glooms"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Gloomy"
+				literal=yes
+			}
+			class = NECROID
+			namelist = NECROID4
+			portrait= nec12
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		
+		create_country = {
+			name = {
+				key="Empire of Gloom"
+				literal=yes
+			}
+			adjective = Imperial
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = "auth_democratic"
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_materialist
+			}
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_15.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="00_solid.dds"
+				}
+				colors=
+				{
+					"red"
+					"black"
+					"pink"
+					"null"
+				}
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_1
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Enforcer"
+				add_global_ship_design = "NAME_Savant"
+				add_global_ship_design = "NAME_Scholar"
+				add_global_ship_design = "NAME_Sage"
+				add_global_ship_design = "NAME_Cloaker"
+				add_global_ship_design = "NAME_Librarian"
+				add_global_ship_design = "NAME_Seeker"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = "Rumney Charnham"
+					class = scientist
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2021jul: Rudonian People's Republic - Rudolf Red Herring
+# Xenophile
+fallen_rudonian_peoples_republic = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Rudonian"
+				literal=yes
+			}
+			plural=
+			{
+				key="Rudonians"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Rudonic"
+				literal=yes
+			}
+			class = REP
+			namelist = REP1
+			portrait= rep4
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Rudonian People's Republic"
+				literal=yes
+			}
+			adjective = Imperial
+			authority = auth_democratic
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_6.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="vertical.dds"
+				}
+				colors=
+				{
+					"red"
+					"red_orange"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_imperial
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophile
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_3
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Adjuster"
+				add_global_ship_design = "NAME_Keeper"
+				add_global_ship_design = "NAME_Custodian"
+				add_global_ship_design = "NAME_Overseer"
+				add_global_ship_design = "NAME_Watcher"
+				add_global_ship_design = "NAME_Seeder"
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = "Morston Alford"
+					class = official
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022apr: The Hugbox Neigbhorhood - Leoback
+# machine
+fallen_the_hugbox_neighborhood = {
+	graphical_culture = "fallen_machine_empire_01"
+	initializer = "fallen_machine"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	possible = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Neighbor"
+				literal=yes
+			}
+			plural=
+			{
+				key="Neigbhors"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Neighbor"
+				literal=yes
+			}
+			class = MACHINE
+			namelist = MACHINE1
+			portrait = sd_rep_robot
+			traits = {
+				trait = trait_machine_unit
+				trait = random_traits
+			}
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="The Hugbox Neighborhood"
+				literal=yes
+			}
+			adjective = Neighbors
+			flag={
+				icon=
+				{
+					category="blocky"
+					file="flag_blocky_11.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="diagonal.dds"
+				}
+				colors=
+				{
+					"red"
+					"red_orange"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_machine
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				if = {
+					limit = { host_has_dlc = "Apocalypse" }
+					give_technology = {
+						tech = tech_colossus
+						message = no
+					}
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Omega"
+				add_global_ship_design = "NAME_Alpha"
+				add_global_ship_design = "NAME_Beta"
+				add_global_ship_design = "NAME_Gamma"
+				add_global_ship_design = "NAME_Theta"
+				add_global_ship_design = "NAME_Tau"
+				add_global_ship_design = "NAME_Sigma"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = "Friendly Neighbor Karen"
+					class = scientist
+					species = owner_main_species
+					traits = {
+						trait = leader_trait_ruler_machine_intelligence
+					}
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022jun: Lenkashayt Acquisitive Venture - Balerion
+# Xenophile
+fallen_empire_lenkashayt_acquisitive_venture = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="Liska"
+				literal=yes
+			}
+			plural=
+			{
+				key="Liskas"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Liskaic"
+				literal=yes
+			}
+			class = LITHOID
+			namelist = LITHOID2
+			portrait = lith7
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Lenkashayt Acquisitive Venture"
+				literal=yes
+			}
+			adjective = Acquisitive
+			authority = auth_oligarchic
+			flag={
+				icon=
+				{
+					category="pointy"
+					file="flag_pointy_7.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="horizontal_stripe.dds"
+				}
+				colors=
+				{
+					"medium_steel"
+					"dark_teal"
+					"black"
+					"null"
+			}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophile
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_3
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Adjuster"
+				add_global_ship_design = "NAME_Keeper"
+				add_global_ship_design = "NAME_Custodian"
+				add_global_ship_design = "NAME_Overseer"
+				add_global_ship_design = "NAME_Watcher"
+				add_global_ship_design = "NAME_Seeder"
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = random
+					class = official
+					gender = male
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022jul: Leaders of the Free World - RinderKaiser
+# Xenophile
+fallen_empire_leaders_of_the_free_world = {
+	graphical_culture = "fallen_empire_03"
+	initializer = "fallen_3"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		create_species = {
+			name=
+			{
+				key="human"
+				literal=yes
+			}
+			plural=
+			{
+				key="humans"
+				literal=yes
+			}
+			adjective=
+			{
+				key="human"
+				literal=yes
+			}
+			class = HUM
+			namelist = HUMAN1
+			portrait = human
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Leaders of the Free World"
+				literal=yes
+			}
+			adjective = Leadership
+			authority = auth_democratic
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_2.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_19.dds"
+				}
+				colors=
+				{
+					"dark_red"
+					"turquoise"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophile
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_3
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Adjuster"
+				add_global_ship_design = "NAME_Keeper"
+				add_global_ship_design = "NAME_Custodian"
+				add_global_ship_design = "NAME_Overseer"
+				add_global_ship_design = "NAME_Watcher"
+				add_global_ship_design = "NAME_Seeder"
+				add_global_ship_design = "NAME_Builder"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = random
+					class = official
+					gender = female
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022aug: Radishing Vassal Factory - Balerion
+# Xenophobe
+fallen_empire_radishing_vassal_factory = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
+
+	weight_modifier = {
+		base = 100
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Radish"
+				literal=yes
+			}
+			plural=
+			{
+				key="Radishes"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Radishing"
+				literal=yes
+			}
+			class = PLANT
+			namelist = PLANT2
+			portrait = pla9
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Radishing Vassal Factory"
+				literal=yes
+			}
+			adjective = Radishing
+			authority = auth_dictatorial
+			flag={
+				icon=
+				{
+					category="plantoid"
+					file="plantoid_11.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_53.dds"
+				}
+				colors=
+				{
+					"intense_red"
+					"shadow_purple"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_4
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = random
+					class = commander
+					species = owner_main_species
+					immortal = yes
+					randomize_traits = yes
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2022dec: Empire of the Glirr - Thirlan
+# Xenophobe
+fallen_empire_of_the_glirr = {
+	graphical_culture = "fallen_empire_04"
+	initializer = "fallen_4"
+
+	weight_modifier = {
+		base = 99999
+	}
+
+	create_country_effect = {
+		
+		create_species = {
+			name=
+			{
+				key="Glir"
+				literal=yes
+			}
+			plural=
+			{
+				key="Glirs"
+				literal=yes
+			}
+			adjective=
+			{
+				key="Glirian"
+				literal=yes
+			}
+			class = AVI
+			namelist = AVI3
+			portrait = avi6
+			traits = random
+			extra_trait_points = 3
+			allow_negative_traits = no
+		}
+		create_country = {
+			name = {
+				key="Empire of the Glirr"
+				literal=yes
+			}
+			adjective = Imperial
+			authority = auth_imperial
+			flag={
+				icon=
+				{
+					category="corporate"
+					file="corporate_07.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="flag_BG_24.dds"
+				}
+				colors=
+				{
+					"orange"
+					"dark_blue"
+					"black"
+					"null"
+				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_fanatic_xenophobe
+			}
+			origin = "origin_fallen_empire"
+			effect = {
+				set_country_flag = fallen_empire_4
+				add_resource = {
+					minerals = 10000
+					energy = 10000
+					food = 1000
+					influence = 500
+				}
+				# must initialize global designs here
+				add_global_ship_design = "NAME_Reaper"
+				add_global_ship_design = "NAME_Imperium"
+				add_global_ship_design = "NAME_Supremacy"
+				add_global_ship_design = "NAME_Glory"
+				add_global_ship_design = "NAME_Devastator"
+				add_global_ship_design = "NAME_Servitor"
+				add_global_ship_design = "NAME_Destiny"
+				add_global_ship_design = "NAME_FE_Starbase"
+				create_leader = {
+					name = random
+					class = commander
+					species = owner_main_species
+					immortal = yes
+					traits = {
+						trait = trait_ruler_warlike_2
+						trait = trait_ruler_logistic_understanding_2
+						trait = leader_trait_fleet_organizer_2
+						trait = subclass_commander_admiral
+						trait = leader_trait_armorer
+					}
+					randomize_traits = no
+					skill = 9
+				}
+				set_leader = last_created_leader
+			}
+		}
+	}
+}
+
+# 2023jul: Mircov Coalescence - MetallicHydra
+# 2023aug: Mircov Coalescence - MetallicHydra
+# 2023sep: Mircov Coalescence - MetallicHydra
+# 2023oct: Mircov Coalescence - MetallicHydra
+# machine
 fallen_mircorv_coalescence = {
 	graphical_culture = "fallen_machine_empire_01"
 	initializer = "fallen_machine"
 
 	weight_modifier = {
-		base = 10000
+		base = 400
 	}
 
 	possible = {
@@ -41,17 +789,6 @@ fallen_mircorv_coalescence = {
 				literal=yes
 			}
 			adjective = Mircorv
-			type = fallen_empire
-			ignore_initial_colony_error = yes
-			authority = auth_machine_intelligence
-			civics = {
-				civic = civic_machine_remnants
-				civic = civic_custodian_directives
-			}
-			species = last_created_species
-			ethos = {
-				ethic = ethic_gestalt_consciousness
-			}
 			flag={
 				icon={
 					category="ornate"
@@ -67,6 +804,17 @@ fallen_mircorv_coalescence = {
 					"black"
 					"null"
 				}
+			}
+			type = fallen_empire
+			ignore_initial_colony_error = yes
+			authority = auth_machine_intelligence
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			species = last_created_species
+			ethos = {
+				ethic = ethic_gestalt_consciousness
 			}
 			origin = "origin_fallen_empire"
 			effect = {
@@ -94,9 +842,17 @@ fallen_mircorv_coalescence = {
 				add_global_ship_design = "NAME_Tau"
 				add_global_ship_design = "NAME_Sigma"
 				add_global_ship_design = "NAME_FE_Starbase"
-				ruler = {
-					add_skill = 9
+				create_leader = {
+					name = "MCP"
+					class = scientist
+					species = owner_main_species
+					traits = {
+						trait = leader_trait_ruler_machine_intelligence
+					}
+					randomize_traits = no
+					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
