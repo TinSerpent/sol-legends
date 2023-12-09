@@ -136,6 +136,7 @@ fallen_empire_TODO = {
 		}
 	}
 }
+
 # Xenophile
 fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_03"
@@ -201,6 +202,7 @@ fallen_empire_TODO = {
 		}
 	}
 }
+
 # Xenophobe
 fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_04"
