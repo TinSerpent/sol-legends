@@ -1,5 +1,5 @@
 # Materialist
-fallen_TODO = {
+fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_02"
 	initializer = "fallen_1"
 
@@ -69,7 +69,7 @@ fallen_TODO = {
 	}
 }
 # Spiritualist
-fallen_empire_2 = {
+fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_01"
 	initializer = "fallen_2"
 
@@ -137,7 +137,7 @@ fallen_empire_2 = {
 	}
 }
 # Xenophile
-fallen_empire_3 = {
+fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_03"
 	initializer = "fallen_3"
 
@@ -202,7 +202,7 @@ fallen_empire_3 = {
 	}
 }
 # Xenophobe
-fallen_empire_4 = {
+fallen_empire_TODO = {
 	graphical_culture = "fallen_empire_04"
 	initializer = "fallen_4"
 
@@ -269,7 +269,7 @@ fallen_empire_4 = {
 }
 
 # Machine
-fallen_machine_empire = {
+fallen_machine_empire_TODO = {
 	graphical_culture = "fallen_machine_empire_01"
 	initializer = "fallen_machine"
 

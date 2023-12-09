@@ -6,10 +6,6 @@ fallen_empire_of_gloom = {
 
 	weight_modifier = {
 		base = 100
-		modifier = {
-			factor = 99999
-			has_origin = origin_scion
-		}
 	}
 
 	create_country_effect = {
@@ -141,7 +137,31 @@ fallen_rudonian_peoples_republic = {
 			allow_negative_traits = no
 		}
 		create_country = {
-			name = random
+			name = {
+				key="Rudonian People's Republic"
+				literal=yes
+			}
+			adjective = Imperial
+			authority = auth_democratic
+			flag={
+				icon=
+				{
+					category="human"
+					file="flag_human_6.dds"
+				}
+				background=
+				{
+					category="backgrounds"
+					file="vertical.dds"
+				}
+				colors=
+				{
+					"red"
+					"red_orange"
+					"black"
+					"null"
+				}
+			}
 			type = fallen_empire
 			ignore_initial_colony_error = yes
 			authority = auth_imperial
@@ -153,7 +173,6 @@ fallen_rudonian_peoples_republic = {
 			ethos = {
 				ethic = ethic_fanatic_xenophile
 			}
-			flag = random
 			origin = "origin_fallen_empire"
 			effect = {
 				set_country_flag = fallen_empire_3
@@ -174,13 +193,14 @@ fallen_rudonian_peoples_republic = {
 				add_global_ship_design = "NAME_FE_Starbase"
 				create_leader = {
 					name = "Morston Alford"
-					class = scientist
+					class = official
 					gender = male
 					species = owner_main_species
 					immortal = yes
 					randomize_traits = yes
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
@@ -188,7 +208,7 @@ fallen_rudonian_peoples_republic = {
 
 # 2022apr: The Hugbox Neigbhorhood - Leoback
 # machine
-fallen_mircorv_coalescence = {
+fallen_the_hugbox_neighborhood = {
 	graphical_culture = "fallen_machine_empire_01"
 	initializer = "fallen_machine"
 
@@ -202,17 +222,17 @@ fallen_mircorv_coalescence = {
 
 	create_country_effect = {
 		create_species = {
-			species_name=
+			name=
 			{
 				key="Neighbor"
 				literal=yes
 			}
-			species_plural=
+			plural=
 			{
 				key="Neigbhors"
 				literal=yes
 			}
-			species_adjective=
+			adjective=
 			{
 				key="Neighbor"
 				literal=yes
@@ -296,6 +316,7 @@ fallen_mircorv_coalescence = {
 					randomize_traits = yes
 					skill = 9
 				}
+				set_leader = last_created_leader
 			}
 		}
 	}
